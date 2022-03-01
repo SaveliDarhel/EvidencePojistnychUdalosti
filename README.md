@@ -1,9 +1,13 @@
 # Evidence Pojistnych Udalosti App
 Requalification Project
 
+
+
 ## Motivation
 
 Fully functional segment of Insurance evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories
+
+
 
 ## How to run
 
@@ -12,6 +16,9 @@ To run this application you need:
 - Java 11
 - Apache NetBeans IDE 12.6 (or any other IDE where you can work with Spring Boot)
 - MySQL
+- Your browser
+
+
 
 ### Next key elements are already installed as dependencies in pom.xml file, so you shouldn't extra install it to run this application:
 
@@ -24,6 +31,7 @@ To run this application you need:
 > 
 > After run application (left click in main -> run) the Tomcat server will run, and you will see the main page of application on url(http://localhost:8080/home)
 > 
+
 
 
 ## Architecture
@@ -39,6 +47,7 @@ To run this application you need:
 > | HomePageController | add.html detail.html edit.html home.html | Pojistene PojisteneRepository |
 
 
+
 ## Features
 
 Now the app shows full functional but only with one database table (Pojistene):
@@ -50,12 +59,15 @@ Now the app shows full functional but only with one database table (Pojistene):
 - Edit ensured
 
 
+
 ## Next-steps
 
 - Manage one-to-many relationship and improve the rest of functionality (insurance, insurance incidents)
 - Improve visual style of application (bootstrap custom styles)
 - Add roles (User, Administrator)
 - Add payment account to every user (example: insurance can be paid by an employer)
+
+
 
 ## Security
 
