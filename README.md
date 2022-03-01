@@ -44,7 +44,7 @@ To run this application you need:
 
 
 > ### Table illustrates classes and HTML foms that used in arcitacture of this version of app
-
+> 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
 > | HomePageController | add.html; detail.html; edit.html; home.html; | Pojistene; PojisteneRepository |
