@@ -26,7 +26,6 @@ To run this application you need:
 - mysql-connector-java
 - spring-boot-starter-data-jpa
 - javax.persistence-api
-
 - Also i used Botstrap 5 to improve user experiance from the application
 
 > 
@@ -70,6 +69,7 @@ Now the app shows full functional but only with one database table (*Pojistene*)
 - Improve visual style of application (*bootstrap custom styles*)
 - Add roles (*User, Administrator*)
 - Add payment account to every user (example: *insurance can be paid by an employer*)
+- Add responsivity for mobile devices
 
 
 
