@@ -38,19 +38,19 @@ To run this application you need:
 
 ### MVC architecture means dividing responsibilities between Model, View and Controller:
 
-- Models (stores logic operations of application)
-- Controllers (manages data flow of application through URL address mapping)
-- Views (shows an information to users of an application by help of HTML forms connecting with different URL address)
+- *Models* (stores logic operations of application)
+- *Controllers* (manages data flow of application through URL address mapping)
+- *Views* (shows an information to users of an application by help of HTML forms connecting with different URL address)
 
-> | Controller | View | Model |
+> | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
-> | HomePageController | add.html detail.html edit.html home.html | Pojistene PojisteneRepository |
+> | HomePageController | add.html; detail.html; edit.html home.html; | Pojistene; PojisteneRepository |
 
 
 
 ## Features
 
-Now the app shows full functional but only with one database table (Pojistene):
+Now the app shows full functional but only with one database table (*Pojistene*):
 
 - Show list of insured (Pojisteny)
 - Show detail of insured (Pojisteny)
@@ -62,13 +62,13 @@ Now the app shows full functional but only with one database table (Pojistene):
 
 ## Next-steps
 
-- Manage one-to-many relationship and improve the rest of functionality (insurance, insurance incidents)
-- Improve visual style of application (bootstrap custom styles)
-- Add roles (User, Administrator)
-- Add payment account to every user (example: insurance can be paid by an employer)
+- Manage one-to-many relationship and improve the rest of functionality (*insurance, insurance incidents*)
+- Improve visual style of application (*bootstrap custom styles*)
+- Add roles (*User, Administrator*)
+- Add payment account to every user (example: *insurance can be paid by an employer*)
 
 
 
 ## Security
 
-> Database security of application is fully managed by Spring Boot classes and functionality (CrudRepository)
+> Database security of application is fully managed by Spring Boot classes and functionality (*CrudRepository*)
