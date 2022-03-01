@@ -68,7 +68,7 @@ Now the app shows full functional but only with one database table (*Pojistene*)
 - Manage One-to-many relationship and improve the rest of functionality (*insurance, insurance incidents*)
 - Improve visual style of application (*bootstrap custom styles*)
 - Add roles (*User, Administrator*)
-- Add payment account to every user (example: *insurance can be paid by an employer*)
+- Add payment account to every user (example: *insurance can be paid by an employee company*)
 - Add responsivity for mobile devices
 
 
