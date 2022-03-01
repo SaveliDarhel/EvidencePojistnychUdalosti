@@ -44,7 +44,7 @@ To run this application you need:
 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
-> | HomePageController | add.html; detail.html; edit.html home.html; | Pojistene; PojisteneRepository |
+> | HomePageController | add.html; detail.html; edit.html; home.html; | Pojistene; PojisteneRepository |
 
 
 
