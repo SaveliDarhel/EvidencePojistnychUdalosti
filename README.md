@@ -1,11 +1,11 @@
 # Evidence Pojistnych Udalosti App
-Requalification Project
+My requalification project
 
 
 
 ## Motivation
 
-Fully functional segment of Insurance evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories
+Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories
 
 
 
@@ -22,11 +22,12 @@ To run this application you need:
 
 ### Next key elements are already installed as dependencies in pom.xml file, so you shouldn't extra install it to run this application:
 
-- bootstrap 5
 - spring-boot-starter-thymeleaf
 - mysql-connector-java
 - spring-boot-starter-data-jpa
 - javax.persistence-api
+
+- Also i used Botstrap 5 to improve user experiance from the application
 
 > 
 > After run application (left click in main -> run) the Tomcat server will run, and you will see the main page of application on url(http://localhost:8080/home)
@@ -43,7 +44,7 @@ To run this application you need:
 - *Views* (shows an information to users of an application by help of HTML forms connecting with different URL address)
 
 
-> ### Table illustrates classes and HTML foms that used in arcitacture of this version of app
+> ### Table illustrates classes and HTML foms that used in arcitecture of this version of app
 > 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
