@@ -42,6 +42,9 @@ To run this application you need:
 - *Controllers* (manages data flow of application through URL address mapping)
 - *Views* (shows an information to users of an application by help of HTML forms connecting with different URL address)
 
+
+> ### Table illustrates classes and HTML foms that used in arcitacture of this version of app
+
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
 > | HomePageController | add.html; detail.html; edit.html; home.html; | Pojistene; PojisteneRepository |
@@ -54,7 +57,7 @@ Now the app shows full functional but only with one database table (*Pojistene*)
 
 - Show list of insured (Pojisteny)
 - Show detail of insured (Pojisteny)
-- Create of Insured person (Pojisteny)
+- Create insured person (Pojisteny)
 - Delete insured
 - Edit ensured
 
@@ -62,7 +65,7 @@ Now the app shows full functional but only with one database table (*Pojistene*)
 
 ## Next-steps
 
-- Manage one-to-many relationship and improve the rest of functionality (*insurance, insurance incidents*)
+- Manage One-to-many relationship and improve the rest of functionality (*insurance, insurance incidents*)
 - Improve visual style of application (*bootstrap custom styles*)
 - Add roles (*User, Administrator*)
 - Add payment account to every user (example: *insurance can be paid by an employer*)
