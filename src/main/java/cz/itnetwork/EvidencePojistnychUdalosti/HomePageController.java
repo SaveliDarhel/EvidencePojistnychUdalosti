@@ -22,6 +22,8 @@ public class HomePageController {
     
     @Autowired
     private PojisteneRepository pojisteneRepository;
+    @Autowired
+    private PojisteniRepository pojisteniRepository;
     
     @GetMapping("/home")
     public String pozdrav(Model model){
@@ -77,7 +79,10 @@ public class HomePageController {
     public String pojistenecSmazat(@PathVariable(value = "id") long id, Model model){
         Pojistene pojisteny = pojisteneRepository.findById(id).orElseThrow();
         pojisteneRepository.delete(pojisteny);
-        
+        ArrayList<Pojisteni> pojisteni = pojisteniRepository.findByPojisteny(pojisteny);
+        for (int i = 0; i < pojisteni.size(); i++){
+            pojisteniRepository.delete(pojisteni.get(i));
+        }
         return "redirect:/home";
     }
     

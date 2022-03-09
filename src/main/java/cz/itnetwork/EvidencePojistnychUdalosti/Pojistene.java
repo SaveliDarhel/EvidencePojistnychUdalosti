@@ -4,9 +4,8 @@
  */
 package cz.itnetwork.EvidencePojistnychUdalosti;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 /**
  *
@@ -22,6 +21,10 @@ public class Pojistene {
     private String datum_narozeni;
     private String tel_cislo;
     private String email;
+    
+    @OneToMany(mappedBy = "pojisteny", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Pojisteni> pojisteni;
+    
 
     /**
      * @return the id
