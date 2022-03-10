@@ -5,7 +5,7 @@ My requalification project
 
 ## Motivation
 
-Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories
+Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories. In project are used @ManyToOne, @OneToMany, @JoinColumn hybernate annotations and @Autowired dependency injections.
 
 
 
@@ -53,7 +53,7 @@ To run this application you need:
 
 ## Features
 
-Now the app shows full functional but only with one database table (*Pojistene*):
+The app shows full functional with database table (*Pojistene*):
 
 - Show list of insured (Pojisteny)
 - Show detail of insured (Pojisteny)
@@ -61,11 +61,20 @@ Now the app shows full functional but only with one database table (*Pojistene*)
 - Delete insured
 - Edit ensured
 
+> After last update app have also full functionality with Insuranse(*Pojisteni*). Tables are connected together by *@OneToMany*, *@ManyToOne* and 
+> *@JoinColumns* annotations, so functionality improved on:
+
+- Add insurance (Pojisteni)
+- Show list of insurance (Pojisteni) for particular person (Pojisteny)
+- Edit insurance information (examle: insuranse name or type)
+- Delete insuranse from the list
+
+> After update if you will remove an insured from the list, all of his insurance information will remove automatically
 
 
 ## Next-steps
 
-- Manage One-to-many relationship and improve the rest of functionality (*insurance, insurance incidents*)
+- Add "address" table conected with "insured" table by OneToMany relation
 - Improve visual style of application (*bootstrap custom styles*)
 - Add roles (*User, Administrator*)
 - Add payment account to every user (example: *insurance can be paid by an employee company*)
