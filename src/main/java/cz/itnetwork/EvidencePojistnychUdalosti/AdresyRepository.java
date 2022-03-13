@@ -11,8 +11,8 @@ import java.util.ArrayList;
  *
  * @author savel
  */
-public interface PojisteniRepository extends CrudRepository<Pojisteni, Long> {
+public interface AdresyRepository extends CrudRepository<Adresy, Long> {
     
-    public ArrayList<Pojisteni> findByPojisteny (Pojistene pojisteny);
+    public ArrayList<Adresy> findByPojisteny (Pojistene pojisteny);
     
 }

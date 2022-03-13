@@ -24,6 +24,8 @@ public class Pojistene {
     
     @OneToMany(mappedBy = "pojisteny", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Pojisteni> pojisteni;
+    @OneToMany(mappedBy = "pojisteny", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Adresy> adresa;
     
 
     /**

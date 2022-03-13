@@ -11,14 +11,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     
     <body>
-        <div class="container w-75 mt-5 pb-5">
+        <div class="container w-75 mt-5 pb-5" th:each = "el : ${pojisteny}">
             
             <div class="d-flex mt-2 border p-2">
                 <p class="h3 mr-auto">Přidání pojištění</p>
-                <a href="/home" class="col-1 btn btn-primary">Zpět</a>
+                <a th:href="'/home/detail/' + ${el.id} + '/spravovatPojisteni'" class="col-1 btn btn-primary">Zpět</a>
             </div>
             
-            <form action="/home/detail/{id}/pridatPojisteni" method="post" th:each = "el : ${pojisteny}">
+            <form action="/home/detail/{id}/pridatPojisteni" method="post">
                 <div class="form-group">
                     <label class="mt-2" for="pojistenec-id">ID Pojištěnce</label>
                     <input readonly="readonly" type="text" class="form-control" name="pojisteny_id" id="pojistenec-id" aria-describedby="idPojistence" th:value="${el.id}">
