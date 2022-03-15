@@ -5,7 +5,7 @@ My requalification project
 
 ## Motivation
 
-Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories. In project are used @ManyToOne, @OneToMany, @JoinColumn hybernate annotations and @Autowired dependency injections.
+Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories. In project are used @ManyToOne, @OneToMany, @JoinColumn Hibernate annotations and @Autowired dependency injections.
 
 
 
