@@ -53,7 +53,9 @@ To run this application you need:
 
 ## Features
 
-The app shows full functional with database table (*Pojistene*):
+The app shows full functionality with next use cases:
+
+**"Pojistene" table**:
 
 - Show list of insured (Pojisteny)
 - Show detail of insured (Pojisteny)
@@ -61,22 +63,31 @@ The app shows full functional with database table (*Pojistene*):
 - Delete insured
 - Edit ensured
 
-> After last update app have also full functionality with Insuranse(*Pojisteni*). Tables are connected together by *@OneToMany*, *@ManyToOne* and 
-> *@JoinColumns* annotations, so functionality improved on:
+**"Pojisteni" table**:
 
 - Add insurance (Pojisteni)
 - Show list of insurance (Pojisteni) for particular person (Pojisteny)
 - Edit insurance information (examle: insuranse name or type)
 - Delete insuranse from the list
 
-> After update if you will remove an insured from the list, all of his insurance information will remove automatically
+> Tables are connected together using *@OneToMany*, *@ManyToOne* and *@JoinColumns* annotations
+> If you will remove an insured from the list, all of his insurance information will remove automatically
+
+**"Adresy" table**:
+
+- Add an address
+- Show the list of addresses
+- Edit address
+- Delete address
+
+> If you will remove an insured from the list, all of his address information will remove automatically
 
 
 ## Next-steps
 
-- Add "address" table conected with "insured" table by OneToMany relation
-- Improve visual style of application (*bootstrap custom styles*)
 - Add roles (*User, Administrator*)
+- Add registration form
+- Improve visual style of application (*bootstrap custom styles*)
 - Add payment account to every user (example: *insurance can be paid by an employee company*)
 - Add responsivity for mobile devices
 
