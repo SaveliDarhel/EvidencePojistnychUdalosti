@@ -3,7 +3,7 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
     <head> 
         <title>Pojistence</title> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -26,12 +26,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td class="col">
                         <div class="col-3 btn-group" role="group" aria-label="Výběr možnosti">
                             <a type="button" class="btn btn-primary" th:href="'/home/detail/' + ${el.id}">Podrobnosti</a>
-                            <a type="button" class="btn btn-warning" th:href="'/home/edit/' + ${el.id}">Editovat</a>
+                            <a type="button" class="btn btn-warning" sec:authorize="hasRole('ADMIN')" th:href="'/home/edit/' + ${el.id}">Editovat</a>
                         </div>
                     </td>
                 </tr>
             </table>
-            </div>   
+            </div>
+            
+            <div class="d-flex flex-column mt-4">
+                <form th:action="@{/logout}" method="post" class="d-flex w-100">
+                    <button  type="submit" class="col-2 btn btn-secondary">Odhlásit se</button>
+                </form> 
+                <div sec:authorize ="isAuthenticated()" class="d-flex w-100">
+                    <small class="col-2 d-flex justify-content-center text-muted">
+                        <p sec:authentication ="name"></p>
+                    </small>
+                </div>
+            </div>
             
         </div>
         

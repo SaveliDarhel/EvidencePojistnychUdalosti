@@ -3,7 +3,7 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
     <head> 
         <title>Detail</title> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -43,7 +43,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
             </form>
             
-            <div class="d-flex mt-4" th:each = "el : ${pojisteny}">
+            <div class="d-flex mt-4" sec:authorize="hasRole('ADMIN')" th:each = "el : ${pojisteny}">
                 <a  th:href="'/home/edit/' + ${el.id}" class="col-2 btn btn-warning">Editovat</a>
                 <form th:action="'/home/remove/' + ${el.id}" method="post" class="d-flex w-100">
                     <button  type="submit" class="col-2 btn btn-danger ml-auto">Odstranit</button>

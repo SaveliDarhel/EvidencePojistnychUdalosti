@@ -69,7 +69,7 @@ public class AdresyController {
         return "redirect:/home/detail/" + pojisteny_id + "/spravovatAdresy";
     }
     
-    @GetMapping("home/adresa/edit/{id}")
+    @GetMapping("/home/adresa/edit/{id}")
     public String editovatPojisteni (@PathVariable(value = "id") long adresa_id, Model model){
         Optional<Adresy> adresyResult = adresyRepository.findById(adresa_id);
         ArrayList<Adresy> adresa = new ArrayList<>();
@@ -83,7 +83,7 @@ public class AdresyController {
         return "editovatAdresu";
     }
     
-    @PostMapping("home/adresa/edit/{id}")
+    @PostMapping("/home/adresa/edit/{id}")
     public String editovatPojisteniUlozit (@PathVariable(value = "id") long adresa_id, @RequestParam String ulice, @RequestParam int cislo_popisne, @RequestParam int cislo_orientacni, @RequestParam String psc, @RequestParam String mestska_cast, @RequestParam String mesto){
         Adresy adresa = adresyRepository.findById(adresa_id).orElseThrow();
         adresa.setUlice(ulice);

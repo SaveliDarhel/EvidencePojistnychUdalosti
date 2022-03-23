@@ -25,7 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td class="col-4" th:text="${el.typ_pojisteni}"></td>
                     <td class="col-4" th:text="${el.pojistna_castka}"></td>
                     <td class="col">
-                        <div class="col-3 btn-group" role="group" aria-label="Výběr možnosti">
+                        <div class="col-3 btn-group" role="group" sec:authorize="hasRole('ADMIN')" aria-label="Výběr možnosti">
                             <a type="button" class="btn btn-warning" th:href="'/home/pojisteni/edit/' + ${el.id}">Editovat</a>
                             <form th:action="'/home/pojisteni/remove/' + ${el.id}" method="post" class="d-flex w-100">
                                 <button  type="submit" class="btn btn-danger ml-auto">Odstranit</button>

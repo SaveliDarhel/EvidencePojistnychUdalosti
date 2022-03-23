@@ -69,7 +69,7 @@ public class PojisteniController {
         return "redirect:/home/detail/" + pojisteny_id + "/spravovatPojisteni";
     }
     
-    @GetMapping("home/pojisteni/edit/{id}")
+    @GetMapping("/home/pojisteni/edit/{id}")
     public String editovatPojisteni (@PathVariable(value = "id") long pojisteni_id, Model model){
         Optional<Pojisteni> pojisteniResult = pojisteniRepository.findById(pojisteni_id);
         ArrayList<Pojisteni> pojisteni = new ArrayList<>();
