@@ -80,8 +80,8 @@ To run this application you need:
 ![HomePage 'USER' view](/screenshots/systemUserView.png)
 
 
-> As you can see on the screenshots above, systemUser view doesn't display the 'edit' button on the Home page
-> You can make shure what permissions(admin or user) you have, according to the smalltext badge below the LogOff('Odhlásit se') button
+As you can see on the screenshots above, systemUser view doesn't display the *'edit'* button on the Home page
+You can make shure what permissions(admin or user) you have, according to the smalltext badge below the LogOff(*'Odhlásit se'*) button
 
 
 > Tables are connected together using *@OneToMany*, *@ManyToOne* and *@JoinColumns* annotations
