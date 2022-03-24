@@ -42,7 +42,7 @@ To do so follow the information in the table below:
 | **USER** | systemUser | systemUser |
 
 > 
-> After run application (left click in main -> run) the Tomcat server will run, and you will see the main page of application on url(http://localhost:8080/home)
+> After starting your SQL/Apache server, run application (left click in main -> run), the Tomcat server will run, and you will see the main page of application on url(http://localhost:8080/home)
 > 
 
 
