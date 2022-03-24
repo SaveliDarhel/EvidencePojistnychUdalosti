@@ -50,10 +50,16 @@ To run this application you need:
 > 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
-> | HomePageController 
-PojisteniController
-AdresyController | home.html \ add.html \ detail.html \ edit.html \ spravovatPojisteni \ spravovatAdresy \ pridatPojisteni \ pridatAdresu \ editoovatPojistenni \ editovatAdresu | Pojistene \ PojisteneRepository \ Pojisteni \ PojisteniRepository \ Adresy \ AdresyRepository \ SpringSecurityConfig |
-
+> | HomePageController | home.html | Pojistene |
+> | PojisteniController | add.html | PojisteneRepository |
+> | AdresyController | detail.html | Adresy |
+> | | edit.html | AdresyRepository |
+> | | spravovatPojisteni.html | SpringSecurityConfig |
+> | | spravovatAdresy.html | |
+> | | pridatPojisteni.html | |
+> | | pridatAdresu.html | |
+> | | editovatPojisteni.html | |
+> | | editovatAdresu.html | |
 
 
 ## Features
