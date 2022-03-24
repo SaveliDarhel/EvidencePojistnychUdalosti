@@ -62,48 +62,37 @@ To run this application you need:
 > | | editovatAdresu.html | |
 
 
+
 ## Features
 
-The app shows full functionality with next use cases:
+**The app shows full functionality with next use cases**:
 
-**"Pojistene" table**:
+- Complete **CRUD** (Create, Read, Update, Delete) functionallyty with any of involving database tables 
+- Roles-based access to the application so Read and Add operations are alowed for both thypes of users(systemUser, systemAdmin), but Edit and Delete operations are allowed only for systemAdmin.
+- View templates of application has role-based access too, so users with 'USER' role only can not see some controles on the templates as shown on screenshots below:
 
-- Show list of insured (Pojisteny)
-- Show detail of insured (Pojisteny)
-- Create insured person (Pojisteny)
-- Delete insured
-- Edit ensured
+**The Home page view of users with an 'ADMIN' Role**:
 
-**"Pojisteni" table**:
+![HomePage 'ADMIN' view](/screenshots/systemAdminView.png)
 
-- Add insurance (Pojisteni)
-- Show list of insurance (Pojisteni) for particular person (Pojisteny)
-- Edit insurance information (examle: insuranse name or type)
-- Delete insuranse from the list
+**The Home page view of users with a 'USER' Role**:
+
+![HomePage 'USER' view](/screenshots/systemUserView.png)
+
 
 > Tables are connected together using *@OneToMany*, *@ManyToOne* and *@JoinColumns* annotations
-> If you will remove an insured from the list, all of his insurance information will remove automatically
-
-**"Adresy" table**:
-
-- Add an address
-- Show the list of addresses
-- Edit address
-- Delete address
-
-> If you will remove an insured from the list, all of his address information will remove automatically
+> If you will remove an insured from the list, all of his insurance and addresses information will remove automatically
 
 
 ## Next-steps
 
-- Add roles (*User, Administrator*)
-- Add registration form
+- Add responsivity for smaller display users
 - Improve visual style of application (*bootstrap custom styles*)
 - Add payment account to every user (example: *insurance can be paid by an employee company*)
-- Add responsivity for mobile devices
+
 
 
 
 ## Security
 
-> Database security of application is fully managed by Spring Boot classes and functionality (*CrudRepository*)
+> Database security of application is fully managed by Spring Boot classes and functionality (*SpringSecurityConfiguration*)
