@@ -50,7 +50,7 @@ To run this application you need:
 > 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
-> | HomePageController\ PojisteniController\ AdresyController | home.html\ add.html\ detail.html\ edit.html\ spravovatPojisteni\ spravovatAdresy\ pridatPojisteni\ pridatAdresu\ editoovatPojistenni\ editovatAdresu | Pojistene\ PojisteneRepository\ Pojisteni\ PojisteniRepository\ Adresy\ AdresyRepository\ SpringSecurityConfig |
+> | HomePageController \ PojisteniController \ AdresyController | home.html \ add.html \ detail.html \ edit.html \ spravovatPojisteni \ spravovatAdresy \ pridatPojisteni \ pridatAdresu \ editoovatPojistenni \ editovatAdresu | Pojistene \ PojisteneRepository \ Pojisteni \ PojisteniRepository \ Adresy \ AdresyRepository \ SpringSecurityConfig |
 
 
 
