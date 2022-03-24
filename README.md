@@ -13,7 +13,7 @@ Application uses Spring Boot Security configuration to achieve the role-based ac
 
 ## How to run
 
-To run this application you need:
+To run this application you will need:
 
 - Java 8
 - Apache NetBeans IDE 12.6 (or any other IDE where you can work with Spring Boot)
@@ -30,6 +30,15 @@ To run this application you need:
 - javax.persistence-api
 - spring-boot-starter-security
 - Also i used Botstrap 5 to improve user experiance from the application
+
+### Roles and passwords
+
+To use this application you will need to login as an *'Admin'* or as a *'User'*
+To do so follow the information in the table below:
+
+| | *Username* | *Password* |
+| **ADMIN** | systemAdmin | systemAdmin |
+| **USER** | systemUser | systemUser |
 
 > 
 > After run application (left click in main -> run) the Tomcat server will run, and you will see the main page of application on url(http://localhost:8080/home)
