@@ -67,25 +67,26 @@ To run this application you need:
 
 **The app shows full functionality with next use cases**:
 
-- Complete **CRUD** (Create, Read, Update, Delete) functionallyty with any of involving database tables 
-- Roles-based access to the application so Read and Add operations are alowed for both thypes of users(systemUser, systemAdmin), but Edit and Delete operations are allowed only for systemAdmin.
-- View templates of application has role-based access too, so users with 'USER' role only can not see some controles on the templates as shown on screenshots below:
+- Complete **CRUD** (*Create, Read, Update, Delete*) functionality with any of involving database tables
+- Roles-based access to the application so Read and Add operations are allowed for both types of users(*systemUser, systemAdmin*), but Edit and Delete operations are allowed only for systemAdmin.
+- View templates of application has role-based access too, so users with *'USER'* role only can not see some controls on the templates as shown on screenshots below:
 
-**The Home page view of users with an 'ADMIN' Role**:
+**The Homepage view of users with an 'ADMIN' Role**:
 
 ![HomePage 'ADMIN' view](/screenshots/systemAdminView.png)
 
-**The Home page view of users with a 'USER' Role**:
+**The Homepage view of users with a 'USER' Role**:
 
 ![HomePage 'USER' view](/screenshots/systemUserView.png)
 
 
-As you can see on the screenshots above, systemUser view doesn't display the *'edit'* button on the Home page
-You can make shure what permissions(admin or user) you have, according to the smalltext badge below the LogOff(*'Odhlásit se'*) button
+As you can see on the screenshots above, systemUser view doesn't display the *'edit'* button on the Homepage 
+You can make sure what permissions(*admin or user*) you have, according to the smalltext badge below the LogOff(*'Odhlásit se'*) button
 
 
 > Tables are connected together using *@OneToMany*, *@ManyToOne* and *@JoinColumns* annotations
 > If you will remove an insured from the list, all of his insurance and addresses information will remove automatically
+
 
 
 ## Next-steps
