@@ -37,6 +37,7 @@ To use this application you will need to login as an *'Admin'* or as a *'User'*
 To do so follow the information in the table below:
 
 | | *Username* | *Password* |
+|:-----:|:-----:|:-----:|
 | **ADMIN** | systemAdmin | systemAdmin |
 | **USER** | systemUser | systemUser |
 
