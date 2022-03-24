@@ -5,7 +5,9 @@ My requalification project
 
 ## Motivation
 
-Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories. In project are used @ManyToOne, @OneToMany, @JoinColumn Hibernate annotations and @Autowired dependency injections.
+Fully functional segment of Insurance-evidence app, from which i have learned basics of building Spring Boot applications with MVC structure, working with URL mapping and database communication repositories. In the project there are used @ManyToOne, @OneToMany, @JoinColumn database relations and basic dependency injections. 
+
+Application uses Spring Boot Security configuration to achieve the role-based access that divides permission levels on User(systemUser) and Admin(systemAdmin). The view forms are also configured due to role-based access.
 
 
 
@@ -13,10 +15,10 @@ Fully functional segment of Insurance-evidence app, from which i have learned ba
 
 To run this application you need:
 
-- Java 11
+- Java 8
 - Apache NetBeans IDE 12.6 (or any other IDE where you can work with Spring Boot)
-- MySQL
-- Your browser
+- MySQL server
+- Your browser (Chrome)
 
 
 
@@ -26,6 +28,7 @@ To run this application you need:
 - mysql-connector-java
 - spring-boot-starter-data-jpa
 - javax.persistence-api
+- spring-boot-starter-security
 - Also i used Botstrap 5 to improve user experiance from the application
 
 > 
@@ -47,7 +50,7 @@ To run this application you need:
 > 
 > | **Controller** | **View** | **Model** |
 > | :-----------: | :-----: | :-------: |
-> | HomePageController | add.html; detail.html; edit.html; home.html; | Pojistene; PojisteneRepository |
+> | HomePageController\ PojisteniController\ AdresyController | home.html\ add.html\ detail.html\ edit.html\ spravovatPojisteni\ spravovatAdresy\ pridatPojisteni\ pridatAdresu\ editoovatPojistenni\ editovatAdresu | Pojistene\ PojisteneRepository\ Pojisteni\ PojisteniRepository\ Adresy\ AdresyRepository\ SpringSecurityConfig |
 
 
 
