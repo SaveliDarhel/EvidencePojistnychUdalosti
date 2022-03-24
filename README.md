@@ -80,12 +80,17 @@ To run this application you need:
 ![HomePage 'USER' view](/screenshots/systemUserView.png)
 
 
+> As you can see on the screenshots above, systemUser view doesn't display the 'edit' button on the Home page
+> You can make shure what permissions(admin or user) you have, according to the smalltext badge below the LogOff('Odhlásit se') button
+
+
 > Tables are connected together using *@OneToMany*, *@ManyToOne* and *@JoinColumns* annotations
 > If you will remove an insured from the list, all of his insurance and addresses information will remove automatically
 
 
 ## Next-steps
 
+- Add statistics reporting
 - Add responsivity for smaller display users
 - Improve visual style of application (*bootstrap custom styles*)
 - Add payment account to every user (example: *insurance can be paid by an employee company*)
