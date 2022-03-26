@@ -31,6 +31,13 @@ To run this application you will need:
 - spring-boot-starter-security
 - Also i used Botstrap 5 to improve user experiance from the application
 
+### Testing data:
+
+> Repository consists a file with name **test_data_evidence_pojistnych_udalosti**. In that file you will find some test data to play with, just import 
+> this file as database using your database (*MySQL*) client
+
+
+
 ### Roles and passwords
 
 To use this application you will need to login as an *'Admin'* or as a *'User'*\
